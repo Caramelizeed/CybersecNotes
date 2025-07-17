@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -523,8 +524,13 @@
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         .footer {
@@ -549,23 +555,23 @@
             .header h1 {
                 font-size: 2.8rem;
             }
-            
+
             .main-card {
                 padding: 40px 30px;
             }
-            
+
             .main-card h2 {
                 font-size: 2.2rem;
             }
-            
+
             .options-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .option-card {
                 padding: 30px;
             }
-            
+
             .content-section {
                 padding: 30px;
             }
@@ -575,21 +581,22 @@
             .container {
                 padding: 0 15px;
             }
-            
+
             .header {
                 padding: 60px 0 40px;
             }
-            
+
             .header h1 {
                 font-size: 2.4rem;
             }
-            
+
             .main-card {
                 padding: 30px 20px;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="loading" id="loading">
         <div class="loading-spinner"></div>
@@ -598,14 +605,19 @@
     <div class="container">
         <div class="header">
             <h1>Cybersecurity <span class="accent">Study Hub</span></h1>
-            <p class="subtitle">Professional learning platform designed for cybersecurity students and professionals. Access comprehensive study materials, expert-led tutorials, and industry-standard resources to advance your cybersecurity expertise.</p>
+            <p class="subtitle">Professional learning platform designed for cybersecurity students and professionals.
+                Access comprehensive study materials, expert-led tutorials, and industry-standard resources to advance
+                your cybersecurity expertise.</p>
         </div>
 
         <!-- Main Menu -->
         <div id="main-menu" class="page active">
             <div class="main-card" onclick="navigateToPage('semester5')">
                 <h2><span class="emoji">📚</span> Semester 5</h2>
-                <p>Access our comprehensive cybersecurity curriculum featuring advanced networking concepts, security protocols, ethical hacking methodologies, and digital forensics. This curated collection includes professional-grade study materials, expert video tutorials, industry-standard textbooks, and hands-on practice challenges designed to prepare you for a successful career in cybersecurity.</p>
+                <p>Access our comprehensive cybersecurity curriculum featuring advanced networking concepts, security
+                    protocols, ethical hacking methodologies, and digital forensics. This curated collection includes
+                    professional-grade study materials, expert video tutorials, industry-standard textbooks, and
+                    hands-on practice challenges designed to prepare you for a successful career in cybersecurity.</p>
             </div>
         </div>
 
@@ -616,36 +628,46 @@
                 <span class="separator">→</span>
                 <span>Semester 5</span>
             </div>
-            
+
             <div class="options-grid">
                 <div class="option-card" onclick="navigateToPage('notes')">
                     <div class="icon">📝</div>
                     <h3>Study Notes</h3>
-                    <p>Comprehensive study materials covering all essential cybersecurity topics including network security, cryptography, ethical hacking, and digital forensics. These professionally organized notes provide in-depth coverage of theoretical concepts and practical applications.</p>
+                    <p>Comprehensive study materials covering all essential cybersecurity topics including network
+                        security, cryptography, ethical hacking, and digital forensics. These professionally organized
+                        notes provide in-depth coverage of theoretical concepts and practical applications.</p>
                 </div>
 
                 <div class="option-card" onclick="navigateToPage('videos')">
                     <div class="icon">🎥</div>
                     <h3>Video Tutorials</h3>
-                    <p>Expert-led video content from industry professionals covering advanced cybersecurity concepts, practical demonstrations, and real-world scenarios. Learn from recognized experts who bring years of industry experience to their teaching.</p>
+                    <p>Expert-led video content from industry professionals covering advanced cybersecurity concepts,
+                        practical demonstrations, and real-world scenarios. Learn from recognized experts who bring
+                        years of industry experience to their teaching.</p>
                 </div>
 
                 <div class="option-card" onclick="navigateToPage('books')">
                     <div class="icon">📖</div>
                     <h3>Reference Books</h3>
-                    <p>Carefully curated collection of authoritative textbooks and reference materials that serve as the foundation for cybersecurity knowledge. These resources provide comprehensive coverage of fundamental and advanced topics.</p>
+                    <p>Carefully curated collection of authoritative textbooks and reference materials that serve as the
+                        foundation for cybersecurity knowledge. These resources provide comprehensive coverage of
+                        fundamental and advanced topics.</p>
                 </div>
 
                 <div class="option-card" onclick="navigateToPage('handwritten')">
                     <div class="icon">✍️</div>
                     <h3>Handwritten Notes</h3>
-                    <p>Personalized study notes and summaries created to simplify complex cybersecurity concepts. These materials offer unique insights and condensed explanations perfect for quick reviews and exam preparation.</p>
+                    <p>Personalized study notes and summaries created to simplify complex cybersecurity concepts. These
+                        materials offer unique insights and condensed explanations perfect for quick reviews and exam
+                        preparation.</p>
                 </div>
 
                 <div class="option-card" onclick="navigateToPage('ctf')">
                     <div class="icon">🏆</div>
                     <h3>CTF Practice</h3>
-                    <p>Hands-on Capture The Flag challenges and cybersecurity competitions that test your practical skills. These platforms provide real-world scenarios to enhance your problem-solving abilities and prepare you for industry challenges.</p>
+                    <p>Hands-on Capture The Flag challenges and cybersecurity competitions that test your practical
+                        skills. These platforms provide real-world scenarios to enhance your problem-solving abilities
+                        and prepare you for industry challenges.</p>
                 </div>
             </div>
         </div>
@@ -659,15 +681,40 @@
                 <span class="separator">→</span>
                 <span>Study Notes</span>
             </div>
-            
+
             <div class="content-section">
                 <h2><span class="emoji">📝</span> Study Notes</h2>
-                <p class="description">Access our comprehensive collection of cybersecurity study notes, meticulously organized and professionally written to support your academic journey. These materials cover all essential topics with detailed explanations, practical examples, and key insights from industry experts.</p>
-                
-                <a href="https://drive.google.com/drive/folders/16vzdIwQJGtAAkxl79GpllWjYXRKwIgtT" target="_blank" class="resource-link">
-                    <div class="link-title">📁 Complete Notes Collection</div>
-                    <div class="link-desc">Comprehensive study materials covering network security fundamentals, cryptography principles, ethical hacking methodologies, digital forensics techniques, and incident response procedures. Each section includes detailed explanations, practical examples, case studies, and key takeaways designed to enhance your understanding of cybersecurity concepts and prepare you for professional certification exams.</div>
+                <p class="description">Access our comprehensive collection of cybersecurity study notes, meticulously
+                    organized and professionally written to support your academic journey. These materials cover all
+                    essential topics with detailed explanations, practical examples, and key insights from industry
+                    experts.</p>
+
+                <h3 style="margin: 40px 0 20px; color: #ffffff; font-weight: 400; font-size: 1.8rem;">ISLC (Information
+                    Systems Life Cycle) Notes</h3>
+                <a href="https://drive.google.com/drive/folders/12qK3qLWZlSYZ_MRdF06-wCatOjp4PJ_J" target="_blank"
+                    class="resource-link">
+                    <div class="link-title">📚 Full ISLC Notes Collection</div>
+                    <div class="link-desc">Complete set of study materials covering all aspects of Information Systems
+                        Life Cycle, including system development methodologies, project management principles, risk
+                        assessment frameworks, and implementation strategies. These notes provide detailed coverage of
+                        SDLC phases, security integration throughout the development process, and best practices for
+                        secure system design and deployment.</div>
                 </a>
+
+                <div style="margin: 60px 0 20px; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 40px;">
+                    <h3 style="color: #ffffff; font-weight: 400; font-size: 1.8rem; margin-bottom: 20px;">Network
+                        Security Notes</h3>
+                    <a href="https://drive.google.com/drive/folders/16vzdIwQJGtAAkxl79GpllWjYXRKwIgtT" target="_blank"
+                        class="resource-link">
+                        <div class="link-title">🔒 Full Network Security Notes Collection</div>
+                        <div class="link-desc">Comprehensive compilation of network security study materials covering
+                            network fundamentals, security protocols, cryptography principles, ethical hacking
+                            methodologies, digital forensics techniques, and incident response procedures. Includes
+                            detailed explanations, practical examples, case studies, and key takeaways designed to
+                            enhance your understanding of network security concepts and prepare you for professional
+                            certification exams.</div>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -680,22 +727,31 @@
                 <span class="separator">→</span>
                 <span>Video Tutorials</span>
             </div>
-            
+
             <div class="content-section">
                 <h2><span class="emoji">🎥</span> Video Tutorials</h2>
-                <p class="description">Learn from industry-leading cybersecurity professionals through high-quality video content that combines theoretical knowledge with practical demonstrations. These carefully selected educational channels provide comprehensive coverage of cybersecurity topics with real-world applications and hands-on examples.</p>
-                
+                <p class="description">Learn from industry-leading cybersecurity professionals through high-quality
+                    video content that combines theoretical knowledge with practical demonstrations. These carefully
+                    selected educational channels provide comprehensive coverage of cybersecurity topics with real-world
+                    applications and hands-on examples.</p>
+
                 <div class="video-grid">
                     <div class="video-card">
                         <a href="https://www.youtube.com/@NetworkChuck" target="_blank">
                             <div class="channel-name">NetworkChuck</div>
-                            <div class="channel-desc">Professional networking and cybersecurity education featuring practical tutorials on network configuration, security protocols, ethical hacking techniques, and IT infrastructure management. Content is designed to make complex concepts accessible through engaging presentations and real-world demonstrations.</div>
+                            <div class="channel-desc">Professional networking and cybersecurity education featuring
+                                practical tutorials on network configuration, security protocols, ethical hacking
+                                techniques, and IT infrastructure management. Content is designed to make complex
+                                concepts accessible through engaging presentations and real-world demonstrations.</div>
                         </a>
                     </div>
                     <div class="video-card">
                         <a href="https://www.youtube.com/@davidbombal" target="_blank">
                             <div class="channel-name">David Bombal</div>
-                            <div class="channel-desc">Advanced network engineering and cybersecurity education covering Python programming for security automation, network troubleshooting, professional certification preparation, and hands-on laboratory exercises. Content focuses on building practical skills for cybersecurity professionals.</div>
+                            <div class="channel-desc">Advanced network engineering and cybersecurity education covering
+                                Python programming for security automation, network troubleshooting, professional
+                                certification preparation, and hands-on laboratory exercises. Content focuses on
+                                building practical skills for cybersecurity professionals.</div>
                         </a>
                     </div>
                 </div>
@@ -711,14 +767,23 @@
                 <span class="separator">→</span>
                 <span>Reference Books</span>
             </div>
-            
+
             <div class="content-section">
                 <h2><span class="emoji">📖</span> Reference Books</h2>
-                <p class="description">Build a strong foundation in cybersecurity with carefully selected authoritative textbooks and reference materials. These resources provide comprehensive coverage of essential topics and serve as valuable references for both academic study and professional development in the cybersecurity field.</p>
-                
-                <a href="https://www.haio.ir/app/uploads/2022/02/Networking-Fundamentals-by-Crystal-Panek-z-lib.org_.pdf" target="_blank" class="resource-link">
+                <p class="description">Build a strong foundation in cybersecurity with carefully selected authoritative
+                    textbooks and reference materials. These resources provide comprehensive coverage of essential
+                    topics and serve as valuable references for both academic study and professional development in the
+                    cybersecurity field.</p>
+
+                <a href="https://www.haio.ir/app/uploads/2022/02/Networking-Fundamentals-by-Crystal-Panek-z-lib.org_.pdf"
+                    target="_blank" class="resource-link">
                     <div class="link-title">📚 Networking Fundamentals by Crystal Panek</div>
-                    <div class="link-desc">This comprehensive textbook provides essential networking concepts that form the foundation of cybersecurity knowledge. Covering topics from basic network protocols and architecture to advanced security implementations, this resource offers clear explanations, practical examples, and real-world scenarios. The book is designed to help readers understand how networks function and how to implement effective security measures in today's complex digital landscape.</div>
+                    <div class="link-desc">This comprehensive textbook provides essential networking concepts that form
+                        the foundation of cybersecurity knowledge. Covering topics from basic network protocols and
+                        architecture to advanced security implementations, this resource offers clear explanations,
+                        practical examples, and real-world scenarios. The book is designed to help readers understand
+                        how networks function and how to implement effective security measures in today's complex
+                        digital landscape.</div>
                 </a>
             </div>
         </div>
@@ -732,14 +797,18 @@
                 <span class="separator">→</span>
                 <span>Handwritten Notes</span>
             </div>
-            
+
             <div class="content-section">
                 <h2><span class="emoji">✍️</span> Handwritten Notes</h2>
-                <p class="description">Personalized study materials designed to complement your cybersecurity education with simplified explanations and visual learning aids.</p>
-                
+                <p class="description">Personalized study materials designed to complement your cybersecurity education
+                    with simplified explanations and visual learning aids.</p>
+
                 <div class="coming-soon">
                     <h3>Coming Soon</h3>
-                    <p>Our collection of handwritten notes and personalized summaries is currently being developed with careful attention to detail. These materials will include simplified explanations of complex concepts, quick reference guides, visual diagrams, and study strategies designed to enhance your learning experience and support your academic success.</p>
+                    <p>Our collection of handwritten notes and personalized summaries is currently being developed with
+                        careful attention to detail. These materials will include simplified explanations of complex
+                        concepts, quick reference guides, visual diagrams, and study strategies designed to enhance your
+                        learning experience and support your academic success.</p>
                 </div>
             </div>
         </div>
@@ -753,22 +822,31 @@
                 <span class="separator">→</span>
                 <span>CTF Practice</span>
             </div>
-            
+
             <div class="ctf-section">
                 <h2><span class="emoji">🏆</span> CTF Practice</h2>
-                <p class="description">Enhance your cybersecurity skills through hands-on Capture The Flag challenges and competitive cybersecurity platforms. These carefully selected resources provide progressive difficulty levels, comprehensive learning paths, and practical experience in ethical hacking, vulnerability assessment, and security analysis.</p>
-                
+                <p class="description">Enhance your cybersecurity skills through hands-on Capture The Flag challenges
+                    and competitive cybersecurity platforms. These carefully selected resources provide progressive
+                    difficulty levels, comprehensive learning paths, and practical experience in ethical hacking,
+                    vulnerability assessment, and security analysis.</p>
+
                 <div class="ctf-grid">
                     <div class="ctf-card">
                         <a href="https://overthewire.org/wargames/" target="_blank">
                             <div class="ctf-title">🎯 OverTheWire Wargames</div>
-                            <div class="ctf-desc">Progressive cybersecurity challenges designed to teach security concepts through hands-on practice. Starting from basic concepts and advancing to complex scenarios, these wargames provide an excellent learning environment for both beginners and experienced practitioners looking to enhance their skills.</div>
+                            <div class="ctf-desc">Progressive cybersecurity challenges designed to teach security
+                                concepts through hands-on practice. Starting from basic concepts and advancing to
+                                complex scenarios, these wargames provide an excellent learning environment for both
+                                beginners and experienced practitioners looking to enhance their skills.</div>
                         </a>
                     </div>
                     <div class="ctf-card">
                         <a href="https://hackerone.com/users/sign_in" target="_blank">
                             <div class="ctf-title">🔐 HackerOne Platform</div>
-                            <div class="ctf-desc">Join the world's largest community of ethical hackers and security researchers. Participate in bug bounty programs, connect with cybersecurity professionals, and contribute to making the internet safer through responsible vulnerability disclosure and collaborative security research.</div>
+                            <div class="ctf-desc">Join the world's largest community of ethical hackers and security
+                                researchers. Participate in bug bounty programs, connect with cybersecurity
+                                professionals, and contribute to making the internet safer through responsible
+                                vulnerability disclosure and collaborative security research.</div>
                         </a>
                     </div>
                 </div>
@@ -793,351 +871,56 @@
 
         function navigateToPage(pageId) {
             if (pageId === currentPage) return;
-            
+
             showLoading();
-            
+
             setTimeout(() => {
-                // Hide current page
-                document.getElementById(currentPage).classList.remove('active');
-                
-                // Show new page
+                // Hide all pages
+                document.querySelectorAll('.page').forEach(page => {
+                    page.classList.remove('active');
+                });
+
+                // Show selected page
                 document.getElementById(pageId).classList.add('active');
                 currentPage = pageId;
-                
-                // Scroll to top smoothly
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-                
+
+                // Scroll to top
+                window.scrollTo(0, 0);
+
                 hideLoading();
-            }, 600);
+            }, 300);
         }
 
-        // Enhanced keyboard navigation
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                if (currentPage !== 'main-menu') {
-                    navigateToPage('main-menu');
-                }
-            } else if (e.key === 'ArrowLeft' || e.key === 'Backspace') {
-                if (currentPage === 'notes' || currentPage === 'videos' || currentPage === 'books' || currentPage === 'handwritten' || currentPage === 'ctf') {
-                    navigateToPage('semester5');
-                } else if (currentPage === 'semester5') {
-                    navigateToPage('main-menu');
-                }
-            }
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function () {
+            // Hide loading after initial load
+            setTimeout(hideLoading, 500);
         });
 
-        // Smooth page transitions
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add fade-in animation to initial page
-            setTimeout(() => {
-                document.getElementById('main-menu').style.opacity = '1';
-            }, 100);
-        });
-
-        // Add intersection observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all cards for animation
-        document.addEventListener('DOMContentLoaded', function() {
-            const cards = document.querySelectorAll('.main-card, .option-card, .content-section, .ctf-section');
-            cards.forEach(card => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(20px)';
-                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(card);
-            });
-        });
-
-        // Add click sound effect simulation
-        function playClickSound() {
-            // Create audio context for subtle UI feedback
-            if (typeof AudioContext !== 'undefined' || typeof webkitAudioContext !== 'undefined') {
-                const AudioContext = window.AudioContext || window.webkitAudioContext;
-                const audioContext = new AudioContext();
-                const oscillator = audioContext.createOscillator();
-                const gainNode = audioContext.createGain();
-                
-                oscillator.connect(gainNode);
-                gainNode.connect(audioContext.destination);
-                
-                oscillator.frequency.value = 800;
-                oscillator.type = 'sine';
-                
-                gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
-                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
-                
-                oscillator.start(audioContext.currentTime);
-                oscillator.stop(audioContext.currentTime + 0.1);
-            }
-        }
-
-        // Add click sound to all interactive elements
-        document.addEventListener('click', function(e) {
-            if (e.target.closest('.main-card, .option-card, .resource-link, .video-card, .ctf-card, .back-btn')) {
-                playClickSound();
-            }
-        });
-
-        // Add hover effect enhancement
-        document.addEventListener('mouseover', function(e) {
-            if (e.target.closest('.main-card, .option-card, .resource-link, .video-card, .ctf-card')) {
-                e.target.closest('.main-card, .option-card, .resource-link, .video-card, .ctf-card').style.filter = 'brightness(1.05)';
-            }
-        });
-
-        document.addEventListener('mouseout', function(e) {
-            if (e.target.closest('.main-card, .option-card, .resource-link, .video-card, .ctf-card')) {
-                e.target.closest('.main-card, .option-card, .resource-link, .video-card, .ctf-card').style.filter = 'brightness(1)';
-            }
-        });
-
-        // Add progress indicator for loading
-        function updateProgressBar() {
-            const progressBar = document.createElement('div');
-            progressBar.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 0%;
-                height: 2px;
-                background: linear-gradient(90deg, #3b82f6, #60a5fa);
-                transition: width 0.6s ease;
-                z-index: 1001;
-            `;
-            document.body.appendChild(progressBar);
-            
-            setTimeout(() => {
-                progressBar.style.width = '100%';
-                setTimeout(() => {
-                    progressBar.remove();
-                }, 600);
-            }, 100);
-        }
-
-        // Enhanced navigation with progress indicator
-        function navigateToPageEnhanced(pageId) {
-            if (pageId === currentPage) return;
-            
-            updateProgressBar();
-            navigateToPage(pageId);
-        }
-
-        // Replace onclick handlers with enhanced version
-        document.addEventListener('DOMContentLoaded', function() {
-            // Update main card click handler
-            const mainCard = document.querySelector('.main-card');
-            if (mainCard) {
-                mainCard.onclick = () => navigateToPageEnhanced('semester5');
-            }
-            
-            // Update option card click handlers
-            const optionCards = document.querySelectorAll('.option-card');
-            optionCards.forEach(card => {
-                const icon = card.querySelector('.icon').textContent;
-                let pageId;
-                
-                switch(icon) {
-                    case '📝': pageId = 'notes'; break;
-                    case '🎥': pageId = 'videos'; break;
-                    case '📖': pageId = 'books'; break;
-                    case '✍️': pageId = 'handwritten'; break;
-                    case '🏆': pageId = 'ctf'; break;
-                }
-                
-                if (pageId) {
-                    card.onclick = () => navigateToPageEnhanced(pageId);
-                }
-            });
-        });
-
-        // Add search functionality
-        function addSearchFeature() {
-            const searchContainer = document.createElement('div');
-            searchContainer.innerHTML = `
-                <div style="position: relative; max-width: 600px; margin: 0 auto 40px;">
-                    <input type="text" id="searchInput" placeholder="Search resources..." style="
-                        width: 100%;
-                        padding: 15px 50px 15px 20px;
-                        background: rgba(255, 255, 255, 0.05);
-                        border: 1px solid rgba(255, 255, 255, 0.1);
-                        border-radius: 12px;
-                        color: #ffffff;
-                        font-size: 1rem;
-                        outline: none;
-                        transition: all 0.3s ease;
-                    ">
-                    <div style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); color: #9ca3af; font-size: 1.2rem;">🔍</div>
-                </div>
-            `;
-            
-            const semester5Page = document.getElementById('semester5');
-            const breadcrumb = semester5Page.querySelector('.nav-breadcrumb');
-            breadcrumb.after(searchContainer);
-            
-            // Search functionality
-            const searchInput = document.getElementById('searchInput');
-            searchInput.addEventListener('input', function(e) {
-                const searchTerm = e.target.value.toLowerCase();
-                const cards = document.querySelectorAll('.option-card');
-                
-                cards.forEach(card => {
-                    const title = card.querySelector('h3').textContent.toLowerCase();
-                    const desc = card.querySelector('p').textContent.toLowerCase();
-                    
-                    if (title.includes(searchTerm) || desc.includes(searchTerm)) {
-                        card.style.display = 'block';
-                        card.style.opacity = '1';
-                    } else {
-                        card.style.display = searchTerm === '' ? 'block' : 'none';
-                    }
-                });
-            });
-        }
-
-        // Initialize search feature
-        document.addEventListener('DOMContentLoaded', function() {
-            setTimeout(addSearchFeature, 1000);
-        });
-
-        // Add theme toggle functionality
-        function addThemeToggle() {
-            const themeToggle = document.createElement('div');
-            themeToggle.innerHTML = `
-                <button id="themeToggle" style="
-                    position: fixed;
-                    top: 20px;
-                    right: 20px;
-                    background: rgba(255, 255, 255, 0.1);
-                    border: 1px solid rgba(255, 255, 255, 0.2);
-                    color: white;
-                    padding: 10px 15px;
-                    border-radius: 8px;
-                    cursor: pointer;
-                    font-size: 1rem;
-                    transition: all 0.3s ease;
-                    backdrop-filter: blur(10px);
-                    z-index: 1000;
-                ">🌙</button>
-            `;
-            document.body.appendChild(themeToggle);
-            
-            const toggle = document.getElementById('themeToggle');
-            let isDark = true;
-            
-            toggle.addEventListener('click', function() {
-                isDark = !isDark;
-                toggle.textContent = isDark ? '🌙' : '☀️';
-                
-                if (isDark) {
-                    document.body.style.background = 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%)';
-                } else {
-                    document.body.style.background = 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f8fafc 100%)';
-                }
-            });
-        }
-
-        // Initialize theme toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            setTimeout(addThemeToggle, 500);
-        });
-
-        // Add mobile menu enhancement
-        function enhanceMobileExperience() {
-            const viewport = window.innerWidth;
-            
-            if (viewport <= 768) {
-                // Add mobile-specific styles
-                const mobileStyles = document.createElement('style');
-                mobileStyles.textContent = `
-                    .main-card, .option-card, .content-section, .ctf-section {
-                        transform: none !important;
-                        transition: background-color 0.3s ease, border-color 0.3s ease;
-                    }
-                    
-                    .main-card:active, .option-card:active {
-                        background-color: rgba(59, 130, 246, 0.1);
-                        border-color: rgba(59, 130, 246, 0.5);
-                    }
-                `;
-                document.head.appendChild(mobileStyles);
-            }
-        }
-
-        // Initialize mobile enhancements
-        document.addEventListener('DOMContentLoaded', enhanceMobileExperience);
-        window.addEventListener('resize', enhanceMobileExperience);
-
-        // Add performance optimization
-        function optimizePerformance() {
-            // Lazy load images if any are added
-            const images = document.querySelectorAll('img[data-src]');
-            
-            if (images.length > 0) {
-                const imageObserver = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            const img = entry.target;
-                            img.src = img.dataset.src;
-                            img.removeAttribute('data-src');
-                            imageObserver.unobserve(img);
-                        }
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
                     });
-                });
-                
-                images.forEach(img => imageObserver.observe(img));
-            }
-        }
-
-        // Initialize performance optimizations
-        document.addEventListener('DOMContentLoaded', optimizePerformance);
-
-        // Add error handling
-        window.addEventListener('error', function(e) {
-            console.error('Application error:', e.error);
-            // Graceful error handling without disrupting user experience
+                }
+            });
         });
 
-        // Initialize all features
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('Cybersecurity Study Hub initialized successfully');
-            
-            // Add custom cursor effect
-            const cursor = document.createElement('div');
-            cursor.style.cssText = `
-                position: fixed;
-                width: 20px;
-                height: 20px;
-                border: 2px solid #3b82f6;
-                border-radius: 50%;
-                pointer-events: none;
-                z-index: 9999;
-                transition: all 0.1s ease;
-                opacity: 0;
-            `;
-            document.body.appendChild(cursor);
-            
-            document.addEventListener('mousemove', (e) => {
-                cursor.style.left = e.clientX - 10 + 'px';
-                cursor.style.top = e.clientY - 10 + 'px';
-                cursor.style.opacity = '0.5';
+        // Enhanced hover effects
+        document.querySelectorAll('.main-card, .option-card, .resource-link, .video-card, .ctf-card').forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-4px)';
             });
-            
-            document.addEventListener('mouseleave', () => {
-                cursor.style.opacity = '0';
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0)';
             });
         });
     </script>
 </body>
+
 </html>
